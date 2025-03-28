@@ -20,7 +20,11 @@ docker run -d --name squid -e TZ=Asia/Tokyo -p 3128:3128 ubuntu/squid:6.10-24.10
 
 ## テスト方法
 
+だいたいこっちはうまくいく。
+
 ```bash
 curl -v -x http://localhost:3128 https://www.google.co.jp
 
 ```
+
+ブラウザだとダメ。バックグラウンドでめっちゃ動いているから？
